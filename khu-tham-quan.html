@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khu tham quan - Bảo tàng Lịch sử</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="khu-tham-quan.css">
+</head>
+
+<body>
+  <!-- ============ HEADER / NAVBAR ============ -->
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a href="index.html" class="logo">
+          <i class="bi bi-bank"></i>
+          <div class="logo-text">
+            <strong>BẢO TÀNG LỊCH SỬ</strong>
+            <small>HISTORY MUSEUM</small>
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li>
+            <li class="nav-item"><a class="nav-link active" href="khu-tham-quan.html">Khu tham quan</a></li>
+            <li class="nav-item"><a class="nav-link" href="gioithieu.html">Giới thiệu</a></li>
+            <li class="nav-item"><a class="nav-link" href="lienhe.html">Liên hệ</a></li>
+            <li class="nav-item"><a class="nav-link" href="vecuatoi.html">Vé của tôi</a></li>
+          </ul>
+          <div class="d-flex align-items-center">
+            <button class="search-btn"><i class="bi bi-search"></i></button>
+            <div id="userArea" class="user-area">
+              <a href="dangnhap.html" class="btn-login">Đăng nhập</a>
+              <a href="dang-ky.html" class="btn-register">Đăng ký</a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- ============ TIÊU ĐỀ TRANG ============ -->
+  <div class="list-hero">
+    <div class="container">
+      <h2>Khu tham quan</h2>
+      <p>Sáu không gian trưng bày tái hiện trọn vẹn hành trình lịch sử dân tộc Việt Nam, từ thời kỳ tiền sử đến Việt Nam
+        hiện đại.</p>
+    </div>
+  </div>
+  <div class="container">
+    <!-- ============ BỘ LỌC ============ -->
+    <div class="filter-panel">
+      <div class="row g-2 align-items-center">
+        <div class="col-lg-5 col-md-12">
+          <div class="input-group">
+            <span class="input-group-text bg-white border-end-0"><i class="bi bi-search text-muted"></i></span>
+            <input type="text" id="searchInput" class="form-control border-start-0 ps-0"
+              placeholder="Tìm khu tham quan theo tên...">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <select id="themeFilter" class="form-select">
+            <option value="">Chủ đề / thời kỳ</option>
+            <option value="tien-su">Thời tiền sử</option>
+            <option value="phong-kien">Thời phong kiến</option>
+            <option value="khang-chien">Kháng chiến</option>
+            <option value="van-hoa">Văn hoá dân tộc</option>
+            <option value="hien-dai">Hiện đại</option>
+          </select>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <select id="floorFilter" class="form-select">
+            <option value="">Khu vực trong bảo tàng</option>
+            <option value="tang-1">Tầng 1</option>
+            <option value="tang-2">Tầng 2</option>
+            <option value="tang-3">Tầng 3</option>
+          </select>
+        </div>
+        <div class="col-lg-1 col-md-12 d-grid">
+          <button id="filterBtn" class="btn btn-museum"><i class="bi bi-filter"></i></button>
+        </div>
+      </div>
+    </div>
+    <!-- ============ TOOLBAR ============ -->
+    <div class="toolbar-row">
+      <span class="result-count" id="resultCount">Hiển thị <strong id="resultCountNum">6</strong> khu tham quan</span>
+      <div class="d-flex align-items-center gap-3">
+        <select class="form-select form-select-sm"
+          style="width:auto; border-radius:var(--radius-md); border-color:var(--line);">
+          <option>Sắp xếp: Mặc định</option>
+          <option>Sắp xếp: Theo thời kỳ</option>
+          <option>Sắp xếp: A - Z</option>
+        </select>
+        <div class="btn-group view-toggle">
+          <button class="btn btn-sm active"><i class="bi bi-grid-3x3-gap"></i></button>
+          <button class="btn btn-sm"><i class="bi bi-list-ul"></i></button>
+        </div>
+      </div>
+    </div>
+    <!-- ============ LƯỚI 6 KHU THAM QUAN ============ -->
+    <div class="row g-4 pb-3" id="zoneGrid">
+      <div class="col-lg-4 col-md-6 zone-item" data-name="thời kỳ tiền sử" data-theme="tien-su" data-floor="tang-1">
+        <a href="khu-1-tien-su.html" class="text-decoration-none text-reset">
+          <div class="zone-card">
+            <div class="zone-media bg-e1">
+              <span class="zone-badge">KHU 1</span>
+              <img src="img-khu-tham-quan/khu1.jpg" alt="Thời kỳ tiền sử" class="zone-img">
+            </div>
+            <div class="zone-body">
+              <h5>Thời kỳ tiền sử</h5>
+              <p>Khám phá nguồn gốc con người và nền văn hóa cổ xưa của người Việt thời Đồ đá, Đồ đồng.</p>
+              <span class="zone-link">Chi tiết khu <i class="bi bi-arrow-right"></i></span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4 col-md-6 zone-item" data-name="thời kỳ phong kiến" data-theme="phong-kien"
+        data-floor="tang-1">
+        <a href="khu-2-phong-kien.html" class="text-decoration-none text-reset">
+          <div class="zone-card">
+            <div class="zone-media bg-e2">
+              <span class="zone-badge">KHU 2</span>
+              <img src="img-khu-tham-quan/khu2.jpg" alt="Thời kỳ phong kiến" class="zone-img">
+            </div>
+            <div class="zone-body">
+              <h5>Thời kỳ phong kiến</h5>
+              <p>Tìm hiểu các triều đại lịch sử Ngô, Đinh, Tiền Lê, Lý, Trần, Lê, Nguyễn.</p>
+              <span class="zone-link">Chi tiết khu <i class="bi bi-arrow-right"></i></span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4 col-md-6 zone-item" data-name="kháng chiến chống pháp" data-theme="khang-chien"
+        data-floor="tang-2">
+        <a href="khu-3-khang-chien-chong-phap.html" class="text-decoration-none text-reset">
+          <div class="zone-card">
+            <div class="zone-media bg-e3">
+              <span class="zone-badge">KHU 3</span>
+              <img src="img-khu-tham-quan/khu3.jpg" alt="Thời kỳ kháng chiến chống Pháp" class="zone-img">
+            </div>
+            <div class="zone-body">
+              <h5>Kháng chiến chống Pháp</h5>
+              <p>Tái hiện cuộc kháng chiến trường kỳ và mốc son chiến thắng Điện Biên Phủ.</p>
+              <span class="zone-link">Chi tiết khu <i class="bi bi-arrow-right"></i></span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4 col-md-6 zone-item" data-name="kháng chiến chống mỹ" data-theme="khang-chien"
+        data-floor="tang-2">
+        <a href="khu-4-khang-chien-chong-my.html" class="text-decoration-none text-reset">
+          <div class="zone-card">
+            <div class="zone-media bg-e4">
+              <span class="zone-badge">KHU 4</span>
+              <img src="img-khu-tham-quan/khu4.jpg" alt="Kháng chiến chống Mỹ" class="zone-img">
+            </div>
+            <div class="zone-body">
+              <h5>Kháng chiến chống Mỹ</h5>
+              <p>Tinh thần bất khuất, ý chí sắt đá và hành trình giải phóng, thống nhất đất nước.</p>
+              <span class="zone-link">Chi tiết khu <i class="bi bi-arrow-right"></i></span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4 col-md-6 zone-item" data-name="văn hóa các dân tộc" data-theme="van-hoa" data-floor="tang-3">
+        <a href="khu-5-van-hoa-cac-dan-toc.html" class="text-decoration-none text-reset">
+          <div class="zone-card">
+            <div class="zone-media bg-e5">
+              <span class="zone-badge">KHU 5</span>
+              <img src="img-khu-tham-quan/khu5.jpeg" alt="Văn hoá các dân tộc" class="zone-img">
+            </div>
+            <div class="zone-body">
+              <h5>Văn hóa các dân tộc</h5>
+              <p>Đa dạng bản sắc văn hóa 54 dân tộc anh em trên mọi miền đất nước Việt Nam.</p>
+              <span class="zone-link">Chi tiết khu <i class="bi bi-arrow-right"></i></span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4 col-md-6 zone-item" data-name="việt nam hiện đại" data-theme="hien-dai" data-floor="tang-3">
+        <a href="khu-6-viet-nam-hien-dai.html" class="text-decoration-none text-reset">
+          <div class="zone-card">
+            <div class="zone-media bg-e6">
+              <span class="zone-badge">KHU 6</span>
+              <img src="img-khu-tham-quan/khu6.jpeg" alt="Việt Nam hiện đại" class="zone-img">
+            </div>
+            <div class="zone-body">
+              <h5>Việt Nam hiện đại</h5>
+              <p>Thành tựu công cuộc Đổi mới, phát triển kinh tế và khát vọng vươn tới tương lai.</p>
+              <span class="zone-link">Chi tiết khu <i class="bi bi-arrow-right"></i></span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- Thông báo khi không có khu nào khớp bộ lọc -->
+    <div id="noResults" class="text-center py-5" style="display:none;">
+      <i class="bi bi-emoji-frown" style="font-size:2rem; color:var(--muted);"></i>
+      <p class="text-muted mt-2 mb-0">Không tìm thấy khu tham quan phù hợp. Hãy thử từ khóa hoặc bộ lọc khác.</p>
+    </div>
+    <!-- ============ SƠ ĐỒ TỔNG THỂ ============ -->
+    <div class="map-overview">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6">
+          <div class="map-embed">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.6036855651364!2d105.75319857400845!3d21.00851778847596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135aba2b73d5d13%3A0xa6a0ef366328a0b1!2zQuG6o28gdMOgbmcgTOG7i2NoIHPhu60gUXXDom4gc-G7sSBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1789646560877!5m2!1svi!2s"
+              width="100%" height="230" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h5 class="font-serif fw-bold" style="color:var(--red-800);">Định hướng tham quan</h5>
+          <p class="text-muted mb-2">Bảo tàng Lịch sử Quân sự Việt Nam tọa lạc tại Km6+500 Đại lộ Thăng Long, phường Tây
+            Mỗ, quận Nam Từ Liêm, Hà Nội.</p>
+          <p class="text-muted mb-3"><i class="bi bi-geo-alt-fill me-1" style="color:var(--red-700);"></i>Đại lộ Thăng
+            Long, Tây Mỗ, Nam Từ Liêm, Hà Nội</p>
+          <a href="https://www.google.com/maps/place/B%E1%BA%A3o+t%C3%A0ng+L%E1%BB%8Bch+s%E1%BB%AD+Qu%C3%A2n+s%E1%BB%B1+Vi%E1%BB%87t+Nam/@21.0085178,105.7531986,17z/data=!3m1!4b1!4m6!3m5!1s0x3135aba2b73d5d13:0xa6a0ef366328a0b1!8m2!3d21.0085128!4d105.7557735!16s%2Fm%2F05f8zck?authuser=0&entry=ttu&g_ep=EgoyMDI2MDkxNC4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank" class="btn btn-outline-museum"><i class="bi bi-signpost-2 me-2"></i>Chỉ đường trên Google
+            Maps</a>
+        </div>
+      </div>
+    </div>
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Cột 1 -->
+          <div class="col-lg-5 col-md-6">
+            <div class="footer-brand">
+              BẢO TÀNG LỊCH SỬ
+            </div>
+            <p>
+              Nơi lưu giữ và giới thiệu những
+              giá trị lịch sử, văn hóa quý báu
+              của dân tộc Việt Nam.
+            </p>
+            <div class="footer-social">
+              <a href="https://www.facebook.com/VietnamMilitaryHistoryMuseum">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="https://www.youtube.com/@BaoQuandoinhandan">
+                <i class="bi bi-youtube"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Cột 2 -->
+          <div class="col-lg-2 col-md-6">
+            <h6>KHÁM PHÁ</h6>
+            <a href="#">
+              Trang chủ
+            </a>
+            <a href="#">
+              Khu tham quan
+            </a>
+            <a href="gioithieu.html">
+              Giới thiệu
+            </a>
+          </div>
+          <!-- Cột 3 -->
+          <div class="col-lg-2 col-md-6">
+            <h6>HỖ TRỢ</h6>
+            <a href="#">
+              Quy định tham quan
+            </a>
+            <a href="#">
+              Câu hỏi thường gặp
+            </a>
+            <a href="lienhe.html">
+              Liên hệ
+            </a>
+          </div>
+          <!-- Cột 4 -->
+          <div class="col-lg-3 col-md-6">
+            <h6>LIÊN HỆ</h6>
+            <p>
+              <i class="bi bi-geo-alt-fill"></i>
+              Hà Nội, Việt Nam
+            </p>
+            <p>
+              <i class="bi bi-telephone-fill"></i>
+              0123 456 789
+            </p>
+            <p>
+              <i class="bi bi-envelope-fill"></i>
+              info@baotanglichsu.vn
+            </p>
+          </div>
+        </div>
+        <!-- FOOTER BOTTOM -->
+        <div class="footer-bottom">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              © 2026 Bảo Tàng Lịch Sử.
+              All rights reserved.
+            </div>
+            <div class="col-md-6 text-md-end">
+              Chính sách bảo mật
+              &nbsp; | &nbsp;
+              Điều khoản sử dụng
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <script src="khu-tham-quan.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

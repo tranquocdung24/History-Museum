@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khu 2 - Thời kỳ phong kiến | Bảo tàng Lịch sử</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="khu-2-phong-kien.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a href="index.html" class="logo">
+          <i class="bi bi-bank"></i>
+          <div>
+            <strong>BẢO TÀNG<br>LỊCH SỬ</strong>
+            <small>HISTORY MUSEUM</small>
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li>
+            <li class="nav-item"><a class="nav-link active" href="khu-tham-quan.html">Khu tham quan</a></li>
+            <li class="nav-item"><a class="nav-link" href="gioithieu.html">Giới thiệu</a></li>
+            <li class="nav-item"><a class="nav-link" href="lienhe.html">Liên hệ</a></li>
+            <li class="nav-item"><a class="nav-link" href="vecuatoi.html">Vé của tôi</a></li>
+          </ul>
+          <div id="userArea" class="user-area">
+            <a href="dangnhap.html" class="btn-login">Đăng nhập</a>
+            <a href="dang-ky.html" class="btn-register">Đăng ký</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="zone-hero" style="background: linear-gradient(135deg, #4A0E17 0%, #2A080D 100%);">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <span class="zone-badge-lg">KHU 2</span>
+          <h1>Thời kỳ phong kiến</h1>
+          <p class="lead-text">Hành trình trải dài qua các triều đại lịch sử Ngô, Đinh, Tiền Lê, Lý, Trần, Lê, Nguyễn
+            với các mốc son chói lọi và di sản văn hóa đỉnh cao.</p>
+          <div class="d-flex flex-wrap gap-3 mt-3">
+            <a href="datve.html" class="btn btn-gold">
+              <i class="bi bi-ticket-perforated me-2"></i>Đặt vé khu này
+            </a>
+            <button class="btn"
+              style="border:1.5px solid rgba(255,255,255,.5); color:#fff; border-radius:999px; padding:.68rem 1.4rem; background:transparent;">
+              <i class="bi bi-images me-2"></i></i><a href="#hien-vat" style="color: var(--cream)">Xem bộ sưu tập</a>
+            </button>
+          </div>
+          <div class="zone-stat-row">
+            <div class="zone-stat">
+              <div class="num">60 phút</div>
+              <div class="lbl">Thời gian tham quan</div>
+            </div>
+            <div class="zone-stat">
+              <div class="num">200+</div>
+              <div class="lbl">Hiện vật trưng bày</div>
+            </div>
+            <div class="zone-stat">
+              <div class="num">Tầng 1</div>
+              <div class="lbl">Vị trí trong bảo tàng</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 d-flex justify-content-center">
+          <div id="heroCarousel" class="carousel slide carousel-fade hero-media-wrapper" data-bs-ride="carousel"
+            data-bs-interval="3500">
+            <div class="carousel-inner h-100">
+              <div class="carousel-item active h-100">
+                <img src="img-khu2/an-vang.jpg" class="d-block w-100 h-100 hero-img" alt="Hiện vật tiền sử 1">
+              </div>
+              <div class="carousel-item h-100">
+                <img src="img-khu2/bia-ts.jpg" class="d-block w-100 h-100 hero-img" alt="Hiện vật tiền sử 2">
+              </div>
+
+              <div class="carousel-item h-100">
+                <img src="img-khu2/gom.jpg" class="d-block w-100 h-100 hero-img" alt="Hiện vật tiền sử 3">
+              </div>
+            </div>
+            <div class="carousel-indicators mb-2">
+              <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-block">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-8 intro-text">
+          <h2 class="section-title-sm">Giới thiệu khu tham quan</h2>
+          <p>Khu 2 tái hiện giai đoạn lịch sử phong kiến độc lập tự chủ từ thế kỷ X đến giữa thế kỷ XIX. Trưng bày tập
+            trung vào sự hình thành nhà nước, sự phát triển của kinh thành Thăng Long, các cuộc kháng chiến bảo vệ chủ
+            quyền và di sản văn hóa tinh thần đỉnh cao.</p>
+          <p>Du khách được chiêm ngưỡng các ấn vàng, kiếm lệnh, bia đá Tiến sĩ, trang phục triều đình cùng nhiều báu vật
+            quốc gia quý giá chứng minh cho nghệ thuật đúc kết và văn minh phát triển rực rỡ qua nhiều thời kỳ.</p>
+        </div>
+        <div class="col-lg-4">
+          <div class="sidebar-card">
+            <h6>Đặt vé nhanh</h6>
+            <div class="mb-3">
+              <label class="form-label">Ngày tham quan</label>
+              <input type="date" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Giờ tham quan</label>
+              <select class="form-select">
+                <option>09:00 - 10:30</option>
+                <option>10:30 - 12:00</option>
+                <option>14:00 - 15:30</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Số lượng người</label>
+              <input type="number" class="form-control" value="1" min="1">
+            </div>
+            <button class="btn btn-museum w-100">Tìm vé</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-block" id="hien-vat">
+    <div class="container">
+      <h2 class="section-title-sm">Hiện vật nổi bật trong khu</h2>
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="artifact-card" data-title="Ấn vàng triều Nguyễn" data-period="Triều Nguyễn · thế kỷ 19 - 20"
+            data-desc="Ấn vàng triều Nguyễn được đúc bằng vàng ròng, khắc chữ triện tinh xảo, là biểu tượng quyền lực tối cao của hoàng đế. Ấn thường được dùng để đóng trên các văn bản, chiếu chỉ quan trọng của triều đình, thể hiện tính chính danh và uy quyền tuyệt đối của bậc thiên tử."
+            data-img="img-khu2/an-vang.jpg">
+            <div class="artifact-media bg-e2"><img src="img-khu2/an-vang.jpg" alt="Ấn vàng triều Nguyễn"
+                class="zone-img"></div>
+            <div class="artifact-body">
+              <h6>Ấn vàng triều Nguyễn</h6>
+              <p>Báu vật thể hiện quyền lực tối cao của hoàng gia.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="artifact-card" data-title="Bia Tiến sĩ Văn Miếu" data-period="Thời Lê sơ - Nguyễn · 1442 - 1779"
+            data-desc="Bia Tiến sĩ Văn Miếu ghi danh những người đỗ đạt trong các khoa thi Đình, được UNESCO công nhận là Di sản Tư liệu Thế giới. Mỗi tấm bia đặt trên lưng rùa đá, khắc họ tên, quê quán người đỗ cùng bài văn bia đề cao truyền thống hiếu học và trọng dụng nhân tài."
+            data-img="img-khu2/bia-ts.jpg">
+            <div class="artifact-media bg-e2"><img src="img-khu2/bia-ts.jpg" alt="Bia Tiến sĩ Văn Miếu"
+                class="zone-img"></div>
+            <div class="artifact-body">
+              <h6>Bia Tiến sĩ Văn Miếu</h6>
+              <p>Di sản tư liệu thế giới vinh danh tri thức Việt.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="artifact-card" data-title="Kiếm lệnh thời Trần" data-period="Thời Trần · thế kỷ 13 - 14"
+            data-desc="Kiếm lệnh thời Trần là vũ khí nghi lễ tượng trưng cho quyền chỉ huy quân sự, thường được trao cho các tướng lĩnh cầm quân ra trận. Hiện vật phản ánh sức mạnh quân sự và tinh thần thượng võ của quân dân Đại Việt qua ba lần đại thắng quân Nguyên Mông."
+            data-img="img-khu2/kiem.jpg">
+            <div class="artifact-media bg-e2"><img src="img-khu2/kiem.jpg" alt="Kiếm lệnh thời Trần" class="zone-img">
+            </div>
+            <div class="artifact-body">
+              <h6>Kiếm lệnh thời Trần</h6>
+              <p>Vũ khí tượng trưng cho sức mạnh quân sự Đại Việt.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="artifact-card" data-title="Gốm hoa ngọc thời Lý" data-period="Thời Lý · thế kỷ 11 - 13"
+            data-desc="Gốm hoa ngọc thời Lý là dòng gốm cao cấp phục vụ hoàng cung, nổi bật với men ngọc trong xanh và họa tiết hoa văn tinh tế. Kỹ thuật nung men đạt trình độ hoàn thiện cao, phản ánh đời sống cung đình xa hoa và nghệ thuật gốm sứ đỉnh cao thời Lý."
+            data-img="img-khu2/gom.jpg">
+            <div class="artifact-media bg-e2"><img src="img-khu2/gom.jpg" alt="Gốm hoa ngọc thời Lý" class="zone-img">
+            </div>
+            <div class="artifact-body">
+              <h6>Gốm hoa ngọc thời Lý</h6>
+              <p>Nghệ thuật gốm sứ tinh xảo phục vụ hoàng cung.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 mt-0 extra-hidden" id="artifactsExtra">
+        <div class="col-lg-3 col-md-6">
+          <div class="artifact-card" data-title="Long bào triều Nguyễn" data-period="Triều Nguyễn · thế kỷ 19 - 20"
+            data-desc="Long bào là trang phục nghi lễ dành riêng cho hoàng đế, được may từ gấm vàng và thêu hình rồng năm móng - biểu tượng độc quyền của bậc đế vương. Từng đường thêu tinh xảo trên long bào thể hiện đẳng cấp và uy nghi tối thượng của triều đình phong kiến."
+            data-img="img-khu2/long-bao.jpg">
+            <div class="artifact-media bg-e2"><img src="img-khu2/long-bao.jpg" alt="Long bào triều Nguyễn"
+                class="zone-img"></div>
+            <div class="artifact-body">
+              <h6>Long bào triều Nguyễn</h6>
+              <p>Trang phục hoàng đế uy nghi, thêu rồng vàng.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="artifact-card" data-title="Súng thần công" data-period="Triều Nguyễn · thế kỷ 19"
+            data-desc="Súng thần công là loại hỏa khí hạng nặng được đúc bằng đồng, sử dụng để phòng thủ kinh thành và các cửa biển quan trọng. Hiện vật là minh chứng cho trình độ chế tác vũ khí và ý thức phòng thủ đất nước của triều đình nhà Nguyễn."
+            data-img="img-khu2/sung-than-cong.jpg">
+            <div class="artifact-media bg-e2"><img src="img-khu2/sung-than-cong.jpg" alt="Súng thần công"
+                class="zone-img"></div>
+            <div class="artifact-body">
+              <h6>Súng thần công</h6>
+              <p>Vũ khí phòng thủ kinh thành thời Nguyễn.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="artifact-card" data-title="Đại Việt sử ký toàn thư"
+            data-period="Biên soạn thời Hậu Lê · thế kỷ 15 - 17"
+            data-desc="Đại Việt sử ký toàn thư là bộ chính sử đồ sộ nhất thời phong kiến, ghi chép liên tục lịch sử dân tộc từ thời Hồng Bàng đến đầu thời Hậu Lê. Đây là nguồn tư liệu gốc vô giá giúp hậu thế tìm hiểu diễn biến các triều đại và sự kiện trọng đại của đất nước."
+            data-img="img-khu2/dai-viet-su-ky.jpg">
+            <div class="artifact-media bg-e2"><img src="img-khu2/dai-viet-su-ky.jpg" alt="Đại Việt sử ký toàn thư"
+                class="zone-img"></div>
+            <div class="artifact-body">
+              <h6>Đại Việt sử ký toàn thư</h6>
+              <p>Bộ chính sử đồ sộ ghi chép lịch sử quốc gia.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="artifact-card" data-title="Mũ quan triều đình" data-period="Triều Nguyễn · thế kỷ 19 - 20"
+            data-desc="Mũ quan triều đình được chế tác cầu kỳ với các họa tiết thêu và phụ kiện bằng vàng, bạc, thể hiện rõ phẩm hàm và địa vị của từng quan lại trong hệ thống triều chính. Kiểu dáng và chất liệu mũ tuân theo quy chế nghiêm ngặt của triều đình phong kiến."
+            data-img="img-khu2/mu-quan.jpg">
+            <div class="artifact-media bg-e2"><img src="img-khu2/mu-quan.jpg" alt="Mũ quan triều đình" class="zone-img">
+            </div>
+            <div class="artifact-body">
+              <h6>Mũ quan triều đình</h6>
+              <p>Trang phục thể hiện phẩm hàm quan lại.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="#" class="btn btn-outline-museum" id="toggleArtifacts">
+          <span id="toggleArtifactsText">Xem thêm</span>
+          <i class="bi bi-chevron-down ms-1" id="toggleArtifactsIcon"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-block">
+    <div class="container">
+      <h2 class="section-title-sm text-center">Các mốc lịch sử chính</h2>
+      <div class="timeline-wrap">
+        <div class="timeline-line"></div>
+        <div class="timeline-points">
+          <div class="timeline-point done">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">938</div>
+            <div class="timeline-desc">Chiến thắng Bạch Đằng</div>
+          </div>
+          <div class="timeline-point done">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">1010</div>
+            <div class="timeline-desc">Lý Thái Tổ dời đô về Thăng Long</div>
+          </div>
+          <div class="timeline-point done">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">1288</div>
+            <div class="timeline-desc">Đại thắng quân Nguyên Mông</div>
+          </div>
+          <div class="timeline-point">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">1428</div>
+            <div class="timeline-desc">Khởi nghĩa Lam Sơn thắng lợi</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-block">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6">
+          <div class="map-embed">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.6036855651364!2d105.75319857400845!3d21.00851778847596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135aba2b73d5d13%3A0xa6a0ef366328a0b1!2zQuG6o28gdMOgbmcgTOG7i2NoIHPhu60gUXXDom4gc-G7sSBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1789646560877!5m2!1svi!2s"
+              width="100%" height="230" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h2 class="section-title-sm">Vị trí khu tham quan</h2>
+          <p class="text-muted mb-2">Khu 2 tọa lạc tại Tầng 1, Cánh đông tòa nhà chính, Bảo tàng Lịch sử Quân sự Việt
+            Nam.</p>
+          <p class="text-muted mb-3"><i class="bi bi-geo-alt-fill me-1" style="color:var(--red-700);"></i>Đại lộ Thăng
+            Long, Tây Mỗ, Nam Từ Liêm, Hà Nội</p>
+          <a href="https://www.google.com/maps/place/B%E1%BA%A3o+t%C3%A0ng+L%E1%BB%8Bch+s%E1%BB%AD+Qu%C3%A2n+s%E1%BB%B1+Vi%E1%BB%87t+Nam/@21.0085178,105.7531986,17z/data=!3m1!4b1!4m6!3m5!1s0x3135aba2b73d5d13:0xa6a0ef366328a0b1!8m2!3d21.0085128!4d105.7557735!16s%2Fm%2F05f8zck?authuser=0&entry=ttu&g_ep=EgoyMDI2MDkxNC4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank" class="btn btn-outline-museum"><i class="bi bi-signpost-2 me-2"></i>Chỉ đường trên Google
+            Maps</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-block">
+    <div class="container">
+      <h2 class="section-title-sm">Khu tham quan khác</h2>
+      <div class="row g-3">
+        <div class="col-lg col-md-4 col-6">
+          <a href="khu-1-tien-su.html" class="text-decoration-none">
+            <div class="related-card">
+              <div class="related-media bg-e1"><img src="img-khu-tham-quan/khu1.jpg" alt="Thời kỳ tiền sử"
+                  class="zone-img"></div>
+              <div class="related-body">
+                <div class="code">KHU 1</div>
+                <div class="name">Thời kỳ tiền sử</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg col-md-4 col-6">
+          <a href="khu-3-khang-chien-chong-phap.html" class="text-decoration-none">
+            <div class="related-card">
+              <div class="related-media bg-e3"><img src="img-khu-tham-quan/khu3.jpg" alt="Kháng chiến chống Pháp"
+                  class="zone-img"></div>
+              <div class="related-body">
+                <div class="code">KHU 3</div>
+                <div class="name">Kháng chiến chống Pháp</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg col-md-4 col-6">
+          <a href="khu-4-khang-chien-chong-my.html" class="text-decoration-none">
+            <div class="related-card">
+              <div class="related-media bg-e4"><img src="img-khu-tham-quan/khu4.jpg" alt="Kháng chiến chống Mỹ"
+                  class="zone-img"></div>
+              <div class="related-body">
+                <div class="code">KHU 4</div>
+                <div class="name">Kháng chiến chống Mỹ</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg col-md-4 col-6">
+          <a href="khu-5-van-hoa-cac-dan-toc.html" class="text-decoration-none">
+            <div class="related-card">
+              <div class="related-media bg-e5"><img src="img-khu-tham-quan/khu5.jpeg" alt="Văn hoá các dân tộc"
+                  class="zone-img"></div>
+              <div class="related-body">
+                <div class="code">KHU 5</div>
+                <div class="name">Văn hóa các dân tộc</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg col-md-4 col-6">
+          <a href="khu-6-viet-nam-hien-dai.html" class="text-decoration-none">
+            <div class="related-card">
+              <div class="related-media bg-e6"><img src="img-khu-tham-quan/khu6.jpeg" alt="Việt Nam hiện đại"
+                  class="zone-img"></div>
+              <div class="related-body">
+                <div class="code">KHU 6</div>
+                <div class="name">Việt Nam hiện đại</div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+
+    <div class="container">
+
+      <div class="row g-4">
+
+        <!-- Cột 1 -->
+
+        <div class="col-lg-5 col-md-6">
+
+          <div class="footer-brand">
+            BẢO TÀNG LỊCH SỬ
+          </div>
+
+          <p>
+            Nơi lưu giữ và giới thiệu những
+            giá trị lịch sử, văn hóa quý báu
+            của dân tộc Việt Nam.
+          </p>
+
+          <div class="footer-social">
+
+            <a href="https://www.facebook.com/VietnamMilitaryHistoryMuseum">
+              <i class="bi bi-facebook"></i>
+            </a>
+
+            <a href="https://www.youtube.com/@BaoQuandoinhandan">
+              <i class="bi bi-youtube"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- Cột 2 -->
+
+        <div class="col-lg-2 col-md-6">
+
+          <h6>KHÁM PHÁ</h6>
+
+          <a href="#">
+            Trang chủ
+          </a>
+
+          <a href="#">
+            Khu tham quan
+          </a>
+
+          <a href="gioithieu.html">
+            Giới thiệu
+          </a>
+
+        </div>
+
+
+        <!-- Cột 3 -->
+
+        <div class="col-lg-2 col-md-6">
+
+          <h6>HỖ TRỢ</h6>
+
+          <a href="#">
+            Quy định tham quan
+          </a>
+
+          <a href="#">
+            Câu hỏi thường gặp
+          </a>
+
+          <a href="lienhe.html">
+            Liên hệ
+          </a>
+
+        </div>
+
+
+        <!-- Cột 4 -->
+
+        <div class="col-lg-3 col-md-6">
+
+          <h6>LIÊN HỆ</h6>
+
+          <p>
+            <i class="bi bi-geo-alt-fill"></i>
+            Hà Nội, Việt Nam
+          </p>
+
+          <p>
+            <i class="bi bi-telephone-fill"></i>
+            0123 456 789
+          </p>
+
+          <p>
+            <i class="bi bi-envelope-fill"></i>
+            info@baotanglichsu.vn
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- FOOTER BOTTOM -->
+
+      <div class="footer-bottom">
+
+        <div class="row align-items-center">
+
+          <div class="col-md-6">
+
+            © 2026 Bảo Tàng Lịch Sử.
+            All rights reserved.
+
+          </div>
+
+          <div class="col-md-6 text-md-end">
+
+            Chính sách bảo mật
+            &nbsp; | &nbsp;
+            Điều khoản sử dụng
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <div class="sticky-cta">
+    <div class="container d-flex align-items-center justify-content-between flex-wrap gap-2">
+      <div>
+        <p class="cta-title">Sẵn sàng khám phá Khu 2?</p>
+        <p class="cta-sub">Đặt vé ngay hôm nay để trải nghiệm hành trình lịch sử.</p>
+      </div>
+      <a href="datve.html" class="btn btn-gold">Đặt vé tham quan khu này</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+
+  <!-- ============ LỚP PHỦ CHI TIẾT HIỆN VẬT ============ -->
+  <div class="artifact-modal-overlay" id="artifactModal">
+    <div class="artifact-modal">
+      <button class="artifact-modal-close" id="artifactModalClose" aria-label="Đóng">
+        <i class="bi bi-x-lg"></i>
+      </button>
+      <div class="artifact-modal-info">
+        <span class="artifact-modal-period" id="modalPeriod"></span>
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+      </div>
+      <div class="artifact-modal-media">
+        <img id="modalImg" src="" alt="">
+      </div>
+    </div>
+  </div>
+
+  <script src="cackhu.js"></script>
+  <script src="artifact-modal.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khu 6 - Việt Nam hiện đại | Bảo tàng Lịch sử</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="khu-6-viet-nam-hien-dai.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a href="index.html" class="logo">
+          <i class="bi bi-bank"></i>
+          <div>
+            <strong>BẢO TÀNG<br>LỊCH SỬ</strong>
+            <small>HISTORY MUSEUM</small>
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li>
+            <li class="nav-item"><a class="nav-link active" href="khu-tham-quan.html">Khu tham quan</a></li>
+            <li class="nav-item"><a class="nav-link" href="gioithieu.html">Giới thiệu</a></li>
+            <li class="nav-item"><a class="nav-link" href="lienhe.html">Liên hệ</a></li>
+            <li class="nav-item"><a class="nav-link" href="vecuatoi.html">Vé của tôi</a></li>
+          </ul>
+          <div id="userArea" class="user-area">
+            <a href="dangnhap.html" class="btn-login">Đăng nhập</a>
+            <a href="dang-ky.html" class="btn-register">Đăng ký</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <section class="zone-hero" style="background: linear-gradient(135deg, #4A0E17 0%, #2A080D 100%);">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <span class="zone-badge-lg">KHU 6</span>
+          <h1>Việt Nam hiện đại</h1>
+          <p class="lead-text">Hành trình công cuộc Đổi mới, phát triển kinh tế - xã hội, hội nhập quốc tế toàn diện và
+            khát vọng vươn mình tới tương lai.</p>
+          <div class="d-flex flex-wrap gap-3 mt-3">
+            <a href="datve.html" class="btn btn-gold">
+              <i class="bi bi-ticket-perforated me-2"></i>Đặt vé khu này
+            </a>
+            <button class="btn"
+              style="border:1.5px solid rgba(255,255,255,.5); color:#fff; border-radius:999px; padding:.68rem 1.4rem; background:transparent;">
+              <i class="bi bi-images me-2"></i><a href="#hien-vat" style="color: var(--cream)">Xem bộ sưu tập</a>
+            </button>
+          </div>
+          <div class="zone-stat-row">
+            <div class="zone-stat">
+              <div class="num">35 phút</div>
+              <div class="lbl">Thời gian tham quan</div>
+            </div>
+            <div class="zone-stat">
+              <div class="num">90+</div>
+              <div class="lbl">Hiện vật trưng bày</div>
+            </div>
+            <div class="zone-stat">
+              <div class="num">Tầng 3</div>
+              <div class="lbl">Vị trí trong bảo tàng</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 d-flex justify-content-center">
+          <div id="heroCarousel" class="carousel slide carousel-fade hero-media-wrapper" data-bs-ride="carousel"
+            data-bs-interval="3500">
+            <div class="carousel-inner h-100">
+              <div class="carousel-item active h-100">
+                <img src="img-khu6/van-kien.jpg" class="d-block w-100 h-100 hero-img" alt="Văn kiện Đổi mới 1986">
+              </div>
+              <div class="carousel-item h-100">
+                <img src="img-khu6/ve-tinh.jpg" class="d-block w-100 h-100 hero-img" alt="Thành tựu công nghệ">
+              </div>
+              <div class="carousel-item h-100">
+                <img src="img-khu6/wto.jpg" class="d-block w-100 h-100 hero-img" alt="Tư liệu Hội nhập WTO">
+              </div>
+            </div>
+            <div class="carousel-indicators mb-2">
+              <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-block">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-8 intro-text">
+          <h2 class="section-title-sm">Giới thiệu khu tham quan</h2>
+          <p>Khu 6 là bức tranh toàn cảnh về một Việt Nam đổi mới, phát triển và vươn mình ra thế giới từ năm 1986 đến
+            nay. Trưng bày giới thiệu các bước ngoặt phát triển hạ tầng, khoa học công nghệ, cùng các văn bản thỏa thuận
+            quốc tế lịch sử.</p>
+          <p>Du khách sẽ trải nghiệm các mô hình công trình hiện đại, thành tựu vũ trụ, cùng không gian trải nghiệm
+            tương tác số hóa hiện đại hàng đầu.</p>
+        </div>
+        <div class="col-lg-4">
+          <div class="sidebar-card">
+            <h6>Đặt vé nhanh</h6>
+            <div class="mb-3">
+              <label class="form-label">Ngày tham quan</label>
+              <input type="date" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Giờ tham quan</label>
+              <select class="form-select">
+                <option>09:30 - 10:30</option>
+                <option>11:00 - 12:00</option>
+                <option>15:00 - 16:00</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Số lượng người</label>
+              <input type="number" class="form-control" value="1" min="1">
+            </div>
+            <button class="btn btn-museum w-100">Tìm vé</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-block" id="hien-vat">
+    <div class="container">
+      <h2 class="section-title-sm">Hiện vật nổi bật trong khu</h2>
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="artifact-card" data-title="Văn kiện Đổi mới 1986" data-period="Đại hội VI · 1986"
+            data-desc="Văn kiện Đại hội Đảng lần thứ VI năm 1986 đánh dấu bước ngoặt lịch sử với đường lối Đổi mới toàn diện đất nước, chuyển đổi từ nền kinh tế kế hoạch hóa tập trung sang kinh tế thị trường định hướng xã hội chủ nghĩa. Đây là quyết sách mở đường cho sự phát triển vượt bậc của Việt Nam."
+            data-img="img-khu6/van-kien.jpg">
+            <div class="artifact-media bg-e6"><img src="img-khu6/van-kien.jpg" alt="Văn kiện Đổi mới 1986"
+                class="zone-img"></div>
+            <div class="artifact-body">
+              <h6>Văn kiện Đổi mới 1986</h6>
+              <p>Văn bản lịch sử đánh dấu bước ngoặt phát triển.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="artifact-card" data-title="Thành tựu công nghệ" data-period="Thời kỳ hội nhập · sau 1986"
+            data-desc="Mô hình vệ tinh viễn thông VINASAT và sản phẩm chip vi mạch “Make in Vietnam” là minh chứng cho những bước tiến vượt bậc của khoa học công nghệ nước nhà. Những thành tựu này khẳng định vị thế và năng lực tự chủ công nghệ ngày càng lớn mạnh của Việt Nam."
+            data-img="img-khu6/ve-tinh.jpg">
+            <div class="artifact-media bg-e6"><img src="img-khu6/ve-tinh.jpg" alt="Thành tựu công nghệ"
+                class="zone-img"></div>
+            <div class="artifact-body">
+              <h6>Thành tựu công nghệ</h6>
+              <p>Mô hình vệ tinh và sản phẩm chip vi mạch Việt Nam.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="artifact-card" data-title="Tư liệu Hội nhập WTO" data-period="Gia nhập WTO · 2007"
+            data-desc="Văn bản nghị định thư gia nhập Tổ chức Thương mại Thế giới (WTO) năm 2007 mở ra một chương mới trong tiến trình hội nhập kinh tế quốc tế của Việt Nam. Sự kiện này đánh dấu bước chuyển mình mạnh mẽ, đưa nền kinh tế đất nước tham gia sâu rộng vào chuỗi giá trị toàn cầu."
+            data-img="img-khu6/wto.jpg">
+            <div class="artifact-media bg-e6"><img src="img-khu6/wto.jpg" alt="Tư liệu Hội nhập WTO" class="zone-img">
+            </div>
+            <div class="artifact-body">
+              <h6>Tư liệu Hội nhập WTO</h6>
+              <p>Bản hiệp định chính thức mở rộng thương mại toàn cầu.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="artifact-card" data-title="Huy chương quốc tế" data-period="Thời kỳ hội nhập · sau 1986"
+            data-desc="Bộ sưu tập huy chương ghi nhận những thành tích nổi bật của Việt Nam trên đấu trường tri thức và thể thao quốc tế, từ các kỳ Olympic Toán, Lý đến SEA Games, ASIAD. Đây là minh chứng cho sự trưởng thành và khát vọng vươn ra thế giới của con người Việt Nam thời kỳ mới."
+            data-img="img-khu6/the-thao.jpg">
+            <div class="artifact-media bg-e6"><img src="img-khu6/the-thao.jpg" alt="Huy chương quốc tế"
+                class="zone-img"></div>
+            <div class="artifact-body">
+              <h6>Huy chương quốc tế</h6>
+              <p>Ghi nhận thành tựu tri thức & thể thao Việt Nam.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 mt-0 extra-hidden" id="artifactsExtra">
+        <div class="col-lg-3 col-md-6">
+          <div class="artifact-card" data-title="Mô hình cầu Nhật Tân"
+            data-period="Thời kỳ hội nhập · công trình khánh thành 2015"
+            data-desc="Cầu Nhật Tân là biểu tượng cho sự phát triển vượt bậc của hạ tầng giao thông Việt Nam, kết nối trung tâm Hà Nội với sân bay quốc tế Nội Bài. Công trình dây văng hiện đại này thể hiện năng lực xây dựng và tầm nhìn quy hoạch đô thị của đất nước trong thời kỳ mới."
+            data-img="img-khu6/cau-nhat-tan.jpg">
+            <div class="artifact-media bg-e6"><img src="img-khu6/cau-nhat-tan.jpg" alt="Mô hình cầu Nhật Tân"
+                class="zone-img"></div>
+            <div class="artifact-body">
+              <h6>Mô hình cầu Nhật Tân</h6>
+              <p>Biểu tượng hạ tầng giao thông hiện đại.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="artifact-card" data-title="Chứng nhận Di sản UNESCO" data-period="Thời kỳ hội nhập · sau 1986"
+            data-desc="Các chứng nhận Di sản Thế giới do UNESCO trao tặng cho nhiều danh thắng, di tích của Việt Nam như Vịnh Hạ Long, Phố cổ Hội An, Cố đô Huế. Đây là sự công nhận và tôn vinh giá trị văn hóa, thiên nhiên đặc sắc của Việt Nam trên trường quốc tế."
+            data-img="img-khu6/unesco.jpg">
+            <div class="artifact-media bg-e6"><img src="img-khu6/unesco.jpg" alt="Chứng nhận Di sản UNESCO"
+                class="zone-img"></div>
+            <div class="artifact-body">
+              <h6>Chứng nhận Di sản UNESCO</h6>
+              <p>Ghi nhận giá trị văn hóa Việt Nam ra thế giới.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="artifact-card" data-title="Áo dài cách tân" data-period="Thời kỳ hội nhập · đương đại"
+            data-desc="Áo dài cách tân kết hợp hài hòa giữa nét truyền thống và hơi thở thời trang hiện đại, trở thành biểu tượng văn hóa được giới thiệu rộng rãi trên các sàn diễn quốc tế. Trang phục này thể hiện sự tự tin hội nhập nhưng vẫn giữ gìn bản sắc dân tộc của người Việt Nam."
+            data-img="img-khu6/ao-dai.jpg">
+            <div class="artifact-media bg-e6"><img src="img-khu6/ao-dai.jpg" alt="Áo dài cách tân" class="zone-img">
+            </div>
+            <div class="artifact-body">
+              <h6>Áo dài cách tân</h6>
+              <p>Biểu tượng thời trang hội nhập và bản sắc.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="artifact-card" data-title="Sản phẩm khởi nghiệp công nghệ"
+            data-period="Thời kỳ hội nhập · đương đại"
+            data-desc="Các sản phẩm khởi nghiệp công nghệ tiêu biểu của người Việt trong lĩnh vực trí tuệ nhân tạo, thương mại điện tử và công nghệ tài chính đang vươn ra thị trường khu vực và thế giới. Đây là minh chứng cho tinh thần đổi mới sáng tạo và khát vọng vươn mình của thế hệ trẻ Việt Nam."
+            data-img="img-khu6/khoi-nghiep.jpg">
+            <div class="artifact-media bg-e6"><img src="img-khu6/khoi-nghiep.jpg" alt="Sản phẩm khởi nghiệp công nghệ"
+                class="zone-img"></div>
+            <div class="artifact-body">
+              <h6>Sản phẩm khởi nghiệp công nghệ</h6>
+              <p>Thành tựu đổi mới sáng tạo Việt Nam.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="#" class="btn btn-outline-museum" id="toggleArtifacts">
+          <span id="toggleArtifactsText">Xem thêm</span>
+          <i class="bi bi-chevron-down ms-1" id="toggleArtifactsIcon"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-block">
+    <div class="container">
+      <h2 class="section-title-sm text-center">Các mốc lịch sử chính</h2>
+      <div class="timeline-wrap">
+        <div class="timeline-line"></div>
+        <div class="timeline-points">
+          <div class="timeline-point done">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">1986</div>
+            <div class="timeline-desc">Đại hội VI - Công cuộc Đổi mới</div>
+          </div>
+          <div class="timeline-point done">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">1995</div>
+            <div class="timeline-desc">Gia nhập ASEAN</div>
+          </div>
+          <div class="timeline-point done">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">2007</div>
+            <div class="timeline-desc">Gia nhập WTO</div>
+          </div>
+          <div class="timeline-point">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">2026</div>
+            <div class="timeline-desc">Hội nhập & Phát triển xanh</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-block">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6">
+          <div class="map-embed">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.6036855651364!2d105.75319857400845!3d21.00851778847596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135aba2b73d5d13%3A0xa6a0ef366328a0b1!2zQuG6o28gdMOgbmcgTOG7i2NoIHPhu60gUXXDom4gc-G7sSBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1789646560877!5m2!1svi!2s"
+              width="100%" height="230" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h2 class="section-title-sm">Vị trí khu tham quan</h2>
+          <p class="text-muted mb-2">Khu 6 tọa lạc tại Tầng 2, Cánh bắc tòa nhà chính, Bảo tàng Lịch sử Quân sự Việt
+            Nam.</p>
+          <p class="text-muted mb-3"><i class="bi bi-geo-alt-fill me-1" style="color:var(--red-700);"></i>Đại lộ Thăng
+            Long, Tây Mỗ, Nam Từ Liêm, Hà Nội</p>
+          <a href="https://www.google.com/maps/place/B%E1%BA%A3o+t%C3%A0ng+L%E1%BB%8Bch+s%E1%BB%AD+Qu%C3%A2n+s%E1%BB%B1+Vi%E1%BB%87t+Nam/@21.0085178,105.7531986,17z/data=!3m1!4b1!4m6!3m5!1s0x3135aba2b73d5d13:0xa6a0ef366328a0b1!8m2!3d21.0085128!4d105.7557735!16s%2Fm%2F05f8zck?authuser=0&entry=ttu&g_ep=EgoyMDI2MDkxNC4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank" class="btn btn-outline-museum"><i class="bi bi-signpost-2 me-2"></i>Chỉ đường trên Google
+            Maps</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION KHU THAM QUAN KHÁC - KHU 6 -->
+  <section class="section-block">
+    <div class="container">
+      <h2 class="section-title-sm">Khu tham quan khác</h2>
+      <div class="row g-3">
+        <div class="col-lg col-md-4 col-6">
+          <a href="khu-1-tien-su.html" class="text-decoration-none">
+            <div class="related-card">
+              <div class="related-media bg-e1"><img src="img-khu-tham-quan/khu1.jpg" alt="Thời kỳ tiền sử"
+                  class="zone-img"></div>
+              <div class="related-body">
+                <div class="code">KHU 1</div>
+                <div class="name">Thời kỳ tiền sử</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg col-md-4 col-6">
+          <a href="khu-2-phong-kien.html" class="text-decoration-none">
+            <div class="related-card">
+              <div class="related-media bg-e2"><img src="img-khu-tham-quan/khu2.jpg" alt="Thời kỳ phong kiến"
+                  class="zone-img"></div>
+              <div class="related-body">
+                <div class="code">KHU 2</div>
+                <div class="name">Thời kỳ phong kiến</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg col-md-4 col-6">
+          <a href="khu-3-khang-chien-chong-phap.html" class="text-decoration-none">
+            <div class="related-card">
+              <div class="related-media bg-e3"><img src="img-khu-tham-quan/khu3.jpg" alt="Kháng chiến chống Pháp"
+                  class="zone-img"></div>
+              <div class="related-body">
+                <div class="code">KHU 3</div>
+                <div class="name">Kháng chiến chống Pháp</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg col-md-4 col-6">
+          <a href="khu-4-khang-chien-chong-my.html" class="text-decoration-none">
+            <div class="related-card">
+              <div class="related-media bg-e4"><img src="img-khu-tham-quan/khu4.jpg" alt="Kháng chiến chống Mỹ"
+                  class="zone-img"></div>
+              <div class="related-body">
+                <div class="code">KHU 4</div>
+                <div class="name">Kháng chiến chống Mỹ</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg col-md-4 col-6">
+          <a href="khu-5-van-hoa-cac-dan-toc.html" class="text-decoration-none">
+            <div class="related-card">
+              <div class="related-media bg-e5"><img src="img-khu-tham-quan/khu5.jpeg" alt="Văn hóa các dân tộc"
+                  class="zone-img"></div>
+              <div class="related-body">
+                <div class="code">KHU 5</div>
+                <div class="name">Văn hóa các dân tộc</div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+
+    <div class="container">
+
+      <div class="row g-4">
+
+        <!-- Cột 1 -->
+
+        <div class="col-lg-5 col-md-6">
+
+          <div class="footer-brand">
+            BẢO TÀNG LỊCH SỬ
+          </div>
+
+          <p>
+            Nơi lưu giữ và giới thiệu những
+            giá trị lịch sử, văn hóa quý báu
+            của dân tộc Việt Nam.
+          </p>
+
+          <div class="footer-social">
+
+            <a href="https://www.facebook.com/VietnamMilitaryHistoryMuseum">
+              <i class="bi bi-facebook"></i>
+            </a>
+
+            <a href="https://www.youtube.com/@BaoQuandoinhandan">
+              <i class="bi bi-youtube"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- Cột 2 -->
+
+        <div class="col-lg-2 col-md-6">
+
+          <h6>KHÁM PHÁ</h6>
+
+          <a href="#">
+            Trang chủ
+          </a>
+
+          <a href="#">
+            Khu tham quan
+          </a>
+
+          <a href="gioithieu.html">
+            Giới thiệu
+          </a>
+
+        </div>
+
+
+        <!-- Cột 3 -->
+
+        <div class="col-lg-2 col-md-6">
+
+          <h6>HỖ TRỢ</h6>
+
+          <a href="#">
+            Quy định tham quan
+          </a>
+
+          <a href="#">
+            Câu hỏi thường gặp
+          </a>
+
+          <a href="lienhe.html">
+            Liên hệ
+          </a>
+
+        </div>
+
+
+        <!-- Cột 4 -->
+
+        <div class="col-lg-3 col-md-6">
+
+          <h6>LIÊN HỆ</h6>
+
+          <p>
+            <i class="bi bi-geo-alt-fill"></i>
+            Hà Nội, Việt Nam
+          </p>
+
+          <p>
+            <i class="bi bi-telephone-fill"></i>
+            0123 456 789
+          </p>
+
+          <p>
+            <i class="bi bi-envelope-fill"></i>
+            info@baotanglichsu.vn
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- FOOTER BOTTOM -->
+
+      <div class="footer-bottom">
+
+        <div class="row align-items-center">
+
+          <div class="col-md-6">
+
+            © 2026 Bảo Tàng Lịch Sử.
+            All rights reserved.
+
+          </div>
+
+          <div class="col-md-6 text-md-end">
+
+            Chính sách bảo mật
+            &nbsp; | &nbsp;
+            Điều khoản sử dụng
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <div class="sticky-cta">
+    <div class="container d-flex align-items-center justify-content-between flex-wrap gap-2">
+      <div>
+        <p class="cta-title">Sẵn sàng khám phá Khu 6?</p>
+        <p class="cta-sub">Đặt vé ngay hôm nay để trải nghiệm hành trình lịch sử.</p>
+      </div>
+      <a href="datve.html" class="btn btn-gold">Đặt vé tham quan khu này</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+
+  <!-- ============ LỚP PHỦ CHI TIẾT HIỆN VẬT ============ -->
+  <div class="artifact-modal-overlay" id="artifactModal">
+    <div class="artifact-modal">
+      <button class="artifact-modal-close" id="artifactModalClose" aria-label="Đóng">
+        <i class="bi bi-x-lg"></i>
+      </button>
+      <div class="artifact-modal-info">
+        <span class="artifact-modal-period" id="modalPeriod"></span>
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+      </div>
+      <div class="artifact-modal-media">
+        <img id="modalImg" src="" alt="">
+      </div>
+    </div>
+  </div>
+
+  <script src="cackhu.js"></script>
+  <script src="artifact-modal.js"></script>
+</body>
+
+</html>

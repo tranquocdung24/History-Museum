@@ -1,0 +1,814 @@
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+ body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #222;
+    background: #fff;
+}
+/* ================= MÀU CHỦ ĐẠO ================= */
+:root {
+    --red: #c9151e;
+    --dark-red: #a30d14;
+    --gold: #f5c542;
+    --light-red: #fff2f2;
+    --dark: #171717;
+}
+/* ================= HEADER ================= */
+header {
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow:
+        0 2px 15px rgba(0, 0, 0, 0.08);
+}
+.navbar {
+    min-height: 75px;
+}
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--red);
+    text-decoration: none;
+}
+.logo > i {
+    font-size: 40px;
+}
+.logo strong {
+    font-size: 16px;
+    line-height: 1;
+}
+.logo small {
+    display: block;
+    color: #555;
+    font-size: 9px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+/* MENU */
+.navbar-nav {
+    gap: 18px;
+}
+.nav-link {
+    color: #222 !important;
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+    transition: 0.3s;
+}
+.nav-link:hover {
+    color: var(--red) !important;
+}
+.nav-link.active {
+    color: var(--red) !important;
+}
+/* gạch chân khi hover */
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 2px;
+    width: 0;
+    height: 2px;
+    background: var(--red);
+    transition: 0.3s;
+    transform: translateX(-50%);
+}
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 80%;
+}
+/* SEARCH */
+.search-btn {
+    border: none;
+    background: transparent;
+    font-size: 19px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.search-btn:hover {
+    color: var(--red);
+    transform: scale(1.15);
+}
+/* BUTTON HEADER */
+.btn-login,
+.btn-register {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+.btn-login,
+.btn-register {
+    border-radius: 25px;
+    padding: 9px 18px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn-login {
+    background: white;
+    border: 1px solid var(--red);
+    color: var(--red);
+    margin-right: 8px;
+}
+.btn-login:hover {
+    background: var(--red);
+    color: white;
+    transform: translateY(-2px);
+}
+.btn-register {
+    background: var(--red);
+    color: white;
+    border: 1px solid var(--red);
+}
+.btn-register:hover {
+    background: var(--dark-red);
+    transform: translateY(-2px);
+    box-shadow:
+        0 5px 15px rgba(201,21,30,.25);
+}
+/* ================= HERO ================= */
+.hero {
+    min-height: 510px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-image:
+        url("banner2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(150, 0, 0, .95),
+            rgba(170, 0, 0, .70),
+            rgba(0, 0, 0, .15)
+        );
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+.hero-label {
+    font-size: 14px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 15px;
+}
+.hero-label i {
+    color: var(--gold);
+}
+.hero h1 {
+    font-size: 50px;
+    line-height: 1.05;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.hero h1 span {
+    color: var(--gold);
+}
+.hero p {
+    max-width: 580px;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 28px;
+}
+/* HERO BUTTON */
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.btn-main {
+    border: none;
+    background: var(--gold);
+    color: #222;
+    padding: 14px 24px;
+    border-radius: 25px;
+    font-size: 13px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: .3s;
+}
+.btn-main:hover {
+    background: white;
+    color: var(--red);
+    transform: translateY(-3px);
+    box-shadow:
+        0 8px 20px rgba(0,0,0,.2);
+}
+.btn-video {
+    border: none;
+    background: transparent;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.btn-video span {
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+.btn-video:hover span {
+    background: white;
+    color: var(--red);
+}
+/* DOT */
+.dots {
+    position: absolute;
+    bottom: 25px;
+    left: 7%;
+    display: flex;
+    gap: 8px;
+}
+.dot {
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+    opacity: .5;
+}
+.dot.active {
+    opacity: 1;
+    background: var(--gold);
+}
+/* ================= BOOKING ================= */
+.booking-section {
+    background: white;
+    padding: 0 0 35px;
+}
+.booking-bar {
+    margin-top: -25px;
+    position: relative;
+    z-index: 5;
+    background: white;
+    border-radius: 15px;
+    box-shadow:
+        0 8px 30px rgba(0,0,0,.12);
+    padding: 17px 22px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.booking-item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-right: 1px solid #eee;
+    padding: 5px 15px;
+}
+.booking-item > i {
+    color: var(--red);
+    font-size: 23px;
+}
+.booking-item small {
+    display: block;
+    color: #888;
+    font-size: 11px;
+}
+.booking-item strong {
+    font-size: 13px;
+    display: block;
+}
+.booking-btn {
+    border: none;
+    background: var(--red);
+    color: white;
+    padding: 13px 27px;
+    border-radius: 25px;
+    font-size: 13px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: .3s;
+}
+.booking-btn:hover {
+    background: var(--dark-red);
+    transform: translateY(-2px);
+}
+/* ================= ZONES ================= */
+.zones {
+    padding: 50px 0 80px;
+    background: #fff;
+}
+.section-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+.section-title span {
+    color: var(--red);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+.section-title h2 {
+    font-size: 30px;
+    font-weight: 900;
+    margin: 5px 0;
+}
+.section-title p {
+    color: #777;
+    font-size: 14px;
+}
+/* CARD */
+.zone-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+.zone-card {
+    height: 100%;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #eee;
+    box-shadow:
+        0 4px 15px rgba(0,0,0,.06);
+    transition: .35s;
+}
+.zone-card:hover {
+    transform: translateY(-8px);
+    box-shadow:
+        0 12px 30px rgba(0,0,0,.13);
+    border-color: #f1c2c2;
+}
+/* IMAGE */
+.zone-image {
+    height: 190px;
+    position: relative;
+    overflow: hidden;
+}
+.zone-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+.zone-card:hover .zone-image img {
+    transform: scale(1.08);
+}
+/* NUMBER */
+.zone-image span {
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+    background: var(--red);
+    color: white;
+    padding: 5px 11px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 800;
+}
+/* CONTENT */
+.zone-content {
+    padding: 18px;
+}
+.zone-content h3 {
+    font-size: 17px;
+    font-weight: 800;
+    margin-bottom: 7px;
+}
+.zone-content p {
+    color: #777;
+    font-size: 13px;
+    min-height: 40px;
+    margin-bottom: 12px;
+}
+.zone-content button {
+    border: none;
+    background: transparent;
+    color: var(--red);
+    font-size: 12px;
+    font-weight: 800;
+    padding: 0;
+    cursor: pointer;
+    transition: .25s;
+}
+.zone-content button:hover {
+    margin-left: 5px;
+}
+/* ================= INTRO ================= */
+.intro {
+    padding: 75px 0;
+    background: #fff7f7;
+}
+.intro-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow:
+        10px 10px 0 var(--gold);
+}
+.red-title {
+    color: var(--red);
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+.intro h2 {
+    font-size: 35px;
+    font-weight: 900;
+    margin: 10px 0 20px;
+}
+.intro h2 span {
+    color: var(--red);
+}
+.intro p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.8;
+}
+.outline-btn {
+    margin-top: 10px;
+    padding: 11px 22px;
+    background: transparent;
+    border: 1px solid var(--red);
+    color: var(--red);
+    border-radius: 25px;
+    font-size: 12px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: .3s;
+}
+.outline-btn:hover {
+    background: var(--red);
+    color: white;
+}
+/* ================= FOOTER ================= */
+.site-footer {
+    background: #8f1017;
+    color: rgba(255, 255, 255, 0.75);
+    padding: 3.5rem 0 1.3rem;
+    margin-top: 0;
+    position: relative;
+}
+/* Thanh vàng phía trên */
+.site-footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #f5c542;
+}
+/* Tiêu đề */
+.site-footer h6 {
+    color: #f5c542;
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 1.1rem;
+    letter-spacing: 0.5px;
+}
+/* Tên bảo tàng */
+.site-footer .footer-brand {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-bottom: 0.8rem;
+}
+/* Nội dung */
+.site-footer p {
+    color: rgba(255, 255, 255, 0.68);
+    font-size: 0.88rem;
+    line-height: 1.8;
+    margin-bottom: 0.55rem;
+}
+/* Link */
+.site-footer a {
+    color: rgba(255, 255, 255, 0.68);
+    font-size: 0.88rem;
+    display: block;
+    margin-bottom: 0.65rem;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+/* Hover */
+.site-footer a:hover {
+    color: #f5c542;
+    padding-left: 6px;
+}
+/* Icon */
+.site-footer i {
+    color: #f5c542;
+    margin-right: 7px;
+    font-size: 0.9rem;
+}
+/* Đường phân cách */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.16);
+    margin-top: 2.2rem;
+    padding-top: 1.2rem;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+/* Mạng xã hội */
+.footer-social {
+    display: flex;
+    gap: 8px;
+    margin-top: 1.1rem;
+}
+.footer-social a {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    color: white;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+.footer-social a:hover {
+    background: #f5c542;
+    color: #8f1017;
+    border-color: #f5c542;
+    padding: 0;
+    transform: translateY(-3px);
+}
+/* Mobile */
+@media (max-width: 767px) {
+    .site-footer {
+        padding: 2.8rem 0 1rem;
+    }
+    .site-footer h6 {
+        margin-top: 1rem;
+    }
+    .footer-bottom {
+        text-align: center;
+    }
+}
+/* ================= RESPONSIVE ================= */
+@media (max-width: 991px) {
+    .navbar-nav {
+        padding: 15px 0;
+    }
+    .nav-link::after {
+        display: none;
+    }
+    .search-btn {
+        margin: 10px 0;
+    }
+    .hero h1 {
+        font-size: 42px;
+    }
+    .booking-bar {
+        flex-wrap: wrap;
+    }
+    .booking-item {
+        flex: 1 1 30%;
+    }
+    .booking-btn {
+        width: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .logo strong {
+        font-size: 13px;
+    }
+    .logo small {
+        font-size: 7px;
+    }
+    .logo > i {
+        font-size: 32px;
+    }
+    .hero {
+        min-height: 520px;
+    }
+    .hero h1 {
+        font-size: 33px;
+    }
+    .hero p {
+        font-size: 14px;
+    }
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .booking-bar {
+        margin-top: 0;
+        border-radius: 10px;
+        padding: 15px;
+    }
+    .booking-item {
+        flex: 1 1 100%;
+        border-right: none;
+        border-bottom: 1px solid #eee;
+        padding: 12px 5px;
+    }
+    .section-title h2 {
+        font-size: 25px;
+    }
+    .intro-image {
+        height: 260px;
+    }
+    .intro h2 {
+        font-size: 28px;
+    }
+}
+.user-area {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-right: 5px;
+    color: #222;
+    font-size: 13px;
+    font-weight: 700;
+}
+.user-info i {
+    font-size: 18px;
+    color: var(--red);
+}
+.btn-logout {
+    background: white;
+    color: var(--red);
+    border: 1px solid var(--red);
+    border-radius: 25px;
+    padding: 9px 18px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn-logout:hover {
+    background: var(--red);
+    color: white;
+    transform: translateY(-2px);
+}
+@media (max-width: 991px) {
+    .user-area {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 15px;
+    }
+    .user-info {
+        margin: 10px 0 5px;
+    }
+}
+.hero .btn-booking,
+.hero .booking-btn {
+    background: var(--red);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 30px;
+    text-decoration: underline;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+    outline: none;
+}
+/* Bỏ lớp vàng/hiệu ứng phụ */
+.hero .btn-booking::before,
+.hero .btn-booking::after,
+.hero .booking-btn::before,
+.hero .booking-btn::after {
+    display: none !important;
+    content: none !important;
+}
+.hero .btn-booking:hover,
+.hero .booking-btn:hover {
+    background: var(--dark-red);
+    color: white;
+    transform: translateY(-2px);
+}
+/* ================= FONT CHUNG ================= */
+html {
+    font-size: 16px;
+}
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+/* Tiêu đề */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    line-height: 1.3;
+}
+/* Đoạn văn */
+p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+/* Menu */
+.nav-link {
+    font-size: 15px;
+    font-weight: 600;
+}
+/* Logo */
+.logo strong {
+    font-size: 16px;
+    font-weight: 800;
+}
+.logo small {
+    font-size: 9px;
+}
+/* Nút */
+button,
+.btn-login,
+.btn-register,
+.booking-btn,
+.btn-video {
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+/* ================= HERO ================= */
+.hero-label {
+    font-size: 14px;
+}
+.hero h1 {
+    font-size: 50px;
+    line-height: 1.15;
+}
+.hero p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+/* ================= SECTION ================= */
+.section-title span {
+    font-size: 13px;
+}
+.section-title h2 {
+    font-size: 32px;
+    line-height: 1.3;
+}
+.section-title p {
+    font-size: 16px;
+}
+/* ================= CARD ================= */
+.zone-image span {
+    font-size: 11px;
+}
+.zone-content h3 {
+    font-size: 19px;
+    line-height: 1.4;
+}
+.zone-content p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+.zone-content button {
+    font-size: 14px;
+}
+/* ================= FOOTER ================= */
+.site-footer .footer-brand {
+    font-size: 20px;
+}
+.site-footer h6 {
+    font-size: 15px;
+}
+.site-footer p,
+.site-footer a {
+    font-size: 14px;
+    line-height: 1.7;
+}
+.footer-bottom {
+    font-size: 13px;
+}
+.nav-link[href="vecuatoi.html"] {
+    color: var(--red);
+    font-weight: 700;
+}
+.nav-link[href="vecuatoi.html"]:hover {
+    color: var(--dark-red);
+}

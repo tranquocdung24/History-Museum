@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Bảo Tàng Lịch Sử</title>
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- ================= HEADER ================= -->
+<header>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <!-- LOGO -->
+            <a href="#" class="logo">
+                <i class="bi bi-bank"></i>
+                <div>
+                    <strong>BẢO TÀNG LỊCH SỬ</strong>
+                    <small>
+                        HISTORY MUSEUM
+                    </small>
+                </div>
+            </a>
+            <!-- MOBILE MENU -->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
+                <i class="bi bi-list"></i>
+            </button>
+            <!-- MENU -->
+            <div
+                class="collapse navbar-collapse"
+                id="menu">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            Trang chủ
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="khu-tham-quan.html">
+                            Khu tham quan
+                        </a>
+                    </li>
+                    <li class="nav-item">
+    <a class="nav-link" href="gioithieu.html">
+        Giới thiệu
+    </a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="lienhe.html">
+        Liên hệ
+    </a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="vecuatoi.html">
+        Vé của tôi
+    </a>
+</li>
+                </ul>
+                <!-- SEARCH -->
+                <button class="search-btn">
+                    <i class="bi bi-search"></i>
+                </button>
+                <!-- LOGIN -->
+                <div id="userArea" class="user-area">
+    <a href="dangnhap.html" class="btn-login">Đăng nhập</a>
+    <a href="dang-ky.html" class="btn-register">Đăng ký</a>
+</div>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- ================= HERO ================= -->
+<section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container">
+        <div class="hero-content">
+            <span class="hero-label">
+                <i class="bi bi-building"></i>
+                BẢO TÀNG LỊCH SỬ VIỆT NAM
+            </span>
+            <h1>
+                KHÁM PHÁ
+                <span>LỊCH SỬ</span>
+                <br>
+                QUA TỪNG HIỆN VẬT
+            </h1>
+            <p>
+                Hành trình khám phá những câu chuyện,
+                những dấu mốc và những giá trị lịch sử
+                của dân tộc Việt Nam.
+            </p>
+            <div class="hero-buttons">
+                <div class="hero-buttons">
+    <a href="datve.html" class="booking-btn">
+        Đặt vé ngay
+        <i class="bi bi-arrow-right"></i>
+    </a>
+</div>
+                <button class="btn-video" type="button" data-bs-toggle="modal" data-bs-target="#videoModal">
+    <span>
+        <i class="bi bi-play-fill"></i>
+    </span>
+    Xem giới thiệu
+</button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ================= KHU THAM QUAN ================= -->
+<section
+    class="zones"
+    id="khu-tham-quan">
+    <div class="container">
+        <div class="section-title">
+            <span>KHÁM PHÁ</span>
+            <h2>
+                CÁC KHU THAM QUAN
+            </h2>
+            <p>
+                Khám phá những không gian lịch sử
+                đặc sắc tại bảo tàng
+            </p>
+        </div>
+        <div class="row g-4">
+            <!-- KHU 1 -->
+            <div  class="col-lg-4 col-md-6">
+                <a href="khu-1-tien-su.html" class="zone-card">
+                    <div class="zone-image">
+                        <img
+                            src="khu1b.jpg"
+                            alt="Khu tham quan 1">
+                        <span>KHU 01</span>
+                    </div>
+                    <div class="zone-content">
+                        <h3>
+                            Thời kỳ tiền sử
+                        </h3>
+                        <p>
+                            Khám phá những dấu tích
+                            đầu tiên của người Việt cổ.
+                        </p>
+                        <button>
+                            Xem chi tiết
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>
+                </a>
+            </div>
+            <!-- KHU 2 -->
+            <div class="col-lg-4 col-md-6">
+                <a href="khu-2-phong-kien.html" class="zone-card">
+                    <div class="zone-image">
+                        <img
+                            src="khu2b.webp"
+                            alt="Khu tham quan 2">
+                        <span>KHU 02</span>
+                    </div>
+                    <div class="zone-content">
+                        <h3>
+                            Thời kỳ phong kiến
+                        </h3>
+                        <p>
+                            Tìm hiểu lịch sử các triều đại
+                            Việt Nam.
+                        </p>
+                        <button>
+                            Xem chi tiết
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>
+                </a>
+            </div>
+            <!-- KHU 3 -->
+            <div class="col-lg-4 col-md-6">
+                <a href="khu-3-khang-chien-chong-Phap.html" class="zone-card">
+                    <div class="zone-image">
+                        <img
+                            src="khu3b.jpg"
+                            alt="Khu tham quan 3">
+                        <span>KHU 03</span>
+                    </div>
+                    <div class="zone-content">
+                        <h3>
+                            Kháng chiến chống Pháp.
+                        </h3>
+                        <p>
+                            Tái hiện cuộc kháng chiến trường kỳ và mốc son chiến thắng Điện Biên Phủ.
+                        </p>
+                        <button>
+                            Xem chi tiết
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>
+                </a>
+            </div>
+            <!-- KHU 4 -->
+            <div class="col-lg-4 col-md-6">
+                <a href="khu-4-khang-chien-chong-My.html" class="zone-card">
+                    <div class="zone-image">
+                        <img
+                            src="khu4b.webp"
+                            alt="Khu tham quan 4">
+                        <span>KHU 04</span>
+                    </div>
+                    <div class="zone-content">
+                        <h3>
+                            Kháng chiến chỗng Mỹ
+                        </h3>
+                        <p>
+                            Tinh thần bất khuất , ý chí sắt đá và hành trình giải phóng thống nhất đất nước.   
+                        </p>
+                        <button>
+                            Xem chi tiết
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>
+                </a>
+            </div>
+            <!-- KHU 5 -->
+            <div class="col-lg-4 col-md-6">
+                <a href="khu-5-van-hoa-cac-dan-toc.html" class="zone-card">
+                    <div class="zone-image">
+                        <img
+                            src="khu5b.jpg"
+                            alt="Khu tham quan 5">
+                        <span>KHU 05</span>
+                    </div>
+                    <div class="zone-content">
+                        <h3>
+                            Văn hóa các dân tộc
+                        </h3>
+                        <p>
+                            Tìm hiểu những nét văn hóa
+                            đặc sắc của dân tộc.
+                        </p>
+                        <button>
+                            Xem chi tiết
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>
+                </a>
+            </div>
+            <!-- KHU 6 -->
+            <div class="col-lg-4 col-md-6">
+                <a href="khu-6-viet-nam-hien-dai.html" class="zone-card">
+                    <div class="zone-image">
+                        <img
+                            src="khu6b.jpg"
+                            alt="Khu tham quan 6">
+                        <span>KHU 06</span>
+                    </div>
+                    <div class="zone-content">
+                        <h3>
+                            Việt Nam hiện đại
+                        </h3>
+                        <p>
+                            Hành trình phát triển của
+                            Việt Nam trong thời đại mới.
+                        </p>
+                        <button>
+                            Xem chi tiết
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ================= GIỚI THIỆU ================= -->
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="row g-4">
+            <!-- Cột 1 -->
+            <div class="col-lg-5 col-md-6">
+                <div class="footer-brand">
+                    BẢO TÀNG LỊCH SỬ
+                </div>
+                <p>
+                    Nơi lưu giữ và giới thiệu những
+                    giá trị lịch sử, văn hóa quý báu
+                    của dân tộc Việt Nam.
+                </p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/VietnamMilitaryHistoryMuseum">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@BaoQuandoinhandan">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Cột 2 -->
+            <div class="col-lg-2 col-md-6">
+                <h6>KHÁM PHÁ</h6>
+                <a href="#">
+                    Trang chủ
+                </a>
+                <a href="#">
+                    Khu tham quan
+                </a>
+                <a href="gioithieu.html">
+                    Giới thiệu
+                </a>
+            </div>
+            <!-- Cột 3 -->
+            <div class="col-lg-2 col-md-6">
+                <h6>HỖ TRỢ</h6>
+                <a href="#">
+                    Quy định tham quan
+                </a>
+                <a href="#">
+                    Câu hỏi thường gặp
+                </a>
+                <a href="lienhe.html">
+                    Liên hệ
+                </a>
+            </div>
+            <!-- Cột 4 -->
+            <div class="col-lg-3 col-md-6">
+                <h6>LIÊN HỆ</h6>
+                <p>
+                    <i class="bi bi-geo-alt-fill"></i>
+                    Hà Nội, Việt Nam
+                </p>
+                <p>
+                    <i class="bi bi-telephone-fill"></i>
+                    0123 456 789
+                </p>
+                <p>
+                    <i class="bi bi-envelope-fill"></i>
+                    info@baotanglichsu.vn
+                </p>
+            </div>
+        </div>
+        <!-- FOOTER BOTTOM -->
+        <div class="footer-bottom">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    © 2026 Bảo Tàng Lịch Sử.
+                    All rights reserved.
+                </div>
+                <div class="col-md-6 text-md-end">
+                    Chính sách bảo mật
+                    &nbsp; | &nbsp;
+                    Điều khoản sử dụng
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Bootstrap JS -->
+ <!-- ================= VIDEO GIỚI THIỆU ================= -->
+<div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    Giới thiệu Bảo Tàng Lịch Sử
+                </h5>
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal">
+                </button>
+            </div>
+            <div class="modal-body p-0">
+                <video
+                    id="introVideo"
+                    controls
+                    width="100%">
+                    <source src="videogioithieu.mp4" type="video/mp4">
+                    Trình duyệt của bạn không hỗ trợ video.
+                </video>
+            </div>
+        </div>
+    </div>
+</div>
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+<!-- JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>
